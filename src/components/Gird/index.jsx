@@ -1,5 +1,5 @@
 import "ag-grid-enterprise";
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useMemo } from "react";
 import {
   ModuleRegistry,
   AllCommunityModule,
@@ -74,6 +74,10 @@ const Grid = () => {
     );
   }, []);
 
+  const cellSelection = useMemo(() => { 
+    return true;
+  }, []);
+
   return (
     <div>
       <div className={styles.wrapper}>
@@ -123,6 +127,8 @@ const Grid = () => {
           pagination
           suppressExcelExport
           sideBar
+          enableCharts
+          cellSelection={cellSelection}
         />
       </div>
     </div>
