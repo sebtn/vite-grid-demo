@@ -108,10 +108,7 @@ const Navigation = () => {
           <NavigationLink name="Finance" title="Finance" href="/finance">
             <ArrowTrendingUpIcon className="stroke-[0.75] stroke-inherit min-w-8 w-8" />
           </NavigationLink>
-          <NavigationLink name="Projects">
-            <Square2StackIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
-          </NavigationLink>
-          <NavigationLink name="Reporting">
+          <NavigationLink name="Reporting" title="Inventory" href="/inventory">
             <ChartPieIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
           </NavigationLink>
         </div>
