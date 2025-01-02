@@ -116,7 +116,6 @@
 }
 
 .grid {
-  height: calc(
-    100vh - var(--layout-grid-header-height) - var(--layout-grid-margin) - var(--grid-title)
-  );
+  margin-top: 21px;
+  height: calc(100vh - 120px);
 }

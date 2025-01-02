@@ -1,6 +1,6 @@
 import styles from "./ContactCellRenderer.module.css";
 
-export const ContactCellRenderer= ({ data }) => {
+export const ContactCellRenderer = ({ data }) => {
   const emailName = data.orgHierarchy.at(-1).toLowerCase().replace(" ", ".");
 
   return (
@@ -18,18 +18,14 @@ export const ContactCellRenderer= ({ data }) => {
               src={`/hr/linkedin.svg`}
               alt="linkedin"
             />
-          </a> 
+          </a>
         </button>
         <button className="button-secondary">
           <a
             href={`mailto:${emailName}@company.com`}
             className={styles.iconLink}
           >
-            <img
-              className={styles.icon}
-              src={`/hr/email.svg`}
-              alt="email"
-            />
+            <img className={styles.icon} src={`/hr/email.svg`} alt="email" />
           </a>
         </button>
       </div>

@@ -1,9 +1,6 @@
 import styles from "./FlagCellRenderer.module.css";
 
-export const FlagCellRenderer= ({
-  value,
-  data: { flag },
-}) => (
+export const FlagCellRenderer = ({ value, data: { flag } }) => (
   <div className={styles.flagCell}>
     <div className={styles.employeeData}>
       <span>{value}</span>

@@ -7,6 +7,7 @@ import {
   UserGroupIcon,
   UserIcon,
   XMarkIcon,
+  DocumentCheckIcon,
 } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 import NavigationLink from "./NavigationLink";
@@ -52,7 +53,7 @@ const ProjectNavigation = ({ selectedProject, isOpen, setSelectedProject }) => {
       />
       <div className="flex flex-col gap-3">
         <NavigationLink name="Progress">
-          <ArrowTrendingUpIcon className="stroke-[0.75] stroke-inherit min-w-8 w-8" />
+          <DocumentCheckIcon className="stroke-[0.75] stroke-inherit min-w-8 w-8" />
         </NavigationLink>
         <NavigationLink name="Team Members">
           <UserGroupIcon className="stroke-[0.75] stroke-inherit min-w-8 w-8" />

@@ -5,7 +5,7 @@ import NavigationLink from "./NavigationLink";
 import {
   ChartBarIcon,
   ChartPieIcon,
-  DocumentCheckIcon,
+  ArrowTrendingUpIcon,
   Square2StackIcon,
   UsersIcon,
 } from "@heroicons/react/24/outline";
@@ -99,20 +99,20 @@ const Navigation = () => {
           </button>
         </div>
         <div className="flex flex-col gap-2">
-          <NavigationLink name="Dashboard">
+          <NavigationLink name="Performance" title="Performance" href="/">
             <ChartBarIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
+          </NavigationLink>
+          <NavigationLink name="HR" title="HR Team" href="/team">
+            <UsersIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
+          </NavigationLink>
+          <NavigationLink name="Finance" title="Finance" href="/finance">
+            <ArrowTrendingUpIcon className="stroke-[0.75] stroke-inherit min-w-8 w-8" />
           </NavigationLink>
           <NavigationLink name="Projects">
             <Square2StackIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
           </NavigationLink>
-          <NavigationLink name="Tasks">
-            <DocumentCheckIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
-          </NavigationLink>
           <NavigationLink name="Reporting">
             <ChartPieIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
-          </NavigationLink>
-          <NavigationLink name="Users">
-            <UsersIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
           </NavigationLink>
         </div>
         <div className="flex flex-col gap-2">

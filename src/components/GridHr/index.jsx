@@ -1,7 +1,7 @@
 import {
   AllCommunityModule,
   ClientSideRowModelModule,
-  ModuleRegistry
+  ModuleRegistry,
 } from "ag-grid-community";
 import {
   ExcelExportModule,
@@ -22,9 +22,7 @@ import { StatusCellRenderer } from "./cell-renderers/StatusCellRenderer";
 import { TagCellRenderer } from "./cell-renderers/TagCellRenderer";
 import { getData } from "./data";
 
-import {
-  grayTheme
-} from "../../../themes";
+import { grayTheme } from "../../../themes";
 
 import styles from "./grid.hr.module.css";
 
@@ -145,7 +143,7 @@ const GridHr = () => {
 
   return (
     <div className={styles.wrapper}>
-       <h1 className="text-4xl text-neutral-200">HR Dashboard</h1>
+      <h1 className="text-4xl text-neutral-200">HR Dashboard</h1>
       <div className={styles.container}>
         <div className={`ag-theme-quartz-dark ${styles.grid}`}>
           <AgGridReact

@@ -3,7 +3,7 @@ import { themeQuartz, iconSetQuartz } from "ag-grid-community";
 
 export const strippedQuartz = themeQuartz.withParams({
   ...themeQuartz,
-  oddRowBackgroundColor: "rgb(0, 0, 0, 0.03)",
+  oddRowBackgroundColor: "rgb(0, 0, 0, 0.07)",
 });
 
 

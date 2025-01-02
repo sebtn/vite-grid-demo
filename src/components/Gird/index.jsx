@@ -1,5 +1,5 @@
 import "ag-grid-enterprise";
-import React, { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback } from "react";
 import {
   ModuleRegistry,
   AllCommunityModule,
@@ -70,23 +70,16 @@ const Grid = () => {
   const onFilterTextBoxChanged = useCallback(() => {
     gridRef.current.api.setGridOption(
       "quickFilterText",
-      document.getElementById("filter-text-box").value
+      document.getElementById("filter-text-box").value,
     );
   }, []);
 
   return (
     <div>
-      <h1 className="text-4xl text-neutral-200">Dashboard</h1>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 35,
-          marginTop: 21,
-        }}
-      >
+      <div className={styles.wrapper}>
+        <h1 className="text-4xl text-neutral-200">Dashboard</h1>
         <p>
-          <span>Theme: </span>
+          <span style={{ marginRight: 7 }}>Theme: </span>
           <PartSelector
             options={themes}
             value={theme}
@@ -95,7 +88,7 @@ const Grid = () => {
         </p>
 
         <div>
-          <span>Quick Filter: </span>
+          <span style={{ marginRight: 7 }}>Quick Filter: </span>
           <input
             style={{ padding: 7 }}
             type="text"
@@ -115,31 +108,22 @@ const Grid = () => {
           </button>
         </div>
       </div>
-      <div
-        style={{
-          height: "80vh",
-          display: "flex",
-          flexDirection: "column",
-          marginTop: 21,
-        }}
-      >
-        <div style={{ flex: 1 }}>
-          <AgGridReact
-            ref={gridRef}
-            theme={theme.theme}
-            columnDefs={columnDefs}
-            rowData={rowData}
-            onGridReady={onGridReady}
-            defaultColDef={defaultColDef}
-            rowGroupPanelShow={"multipleColumns"}
-            rowSelection={rowSelection}
-            paginationPageSize={paginationPageSize}
-            paginationPageSizeSelector={paginationPageSizeSelector}
-            pagination
-            suppressExcelExport
-            sideBar
-          />
-        </div>
+      <div className={styles.grid}>
+        <AgGridReact
+          ref={gridRef}
+          theme={theme.theme}
+          columnDefs={columnDefs}
+          rowData={rowData}
+          onGridReady={onGridReady}
+          defaultColDef={defaultColDef}
+          rowGroupPanelShow={"multipleColumns"}
+          rowSelection={rowSelection}
+          paginationPageSize={paginationPageSize}
+          paginationPageSizeSelector={paginationPageSizeSelector}
+          pagination
+          suppressExcelExport
+          sideBar
+        />
       </div>
     </div>
   );

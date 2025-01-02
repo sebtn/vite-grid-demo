@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 
 import Grid from "@components/Gird";
 import GridHr from "@components/GridHr";
+import GridFinance from "@components/GridFinance";
 import Navigation from "@components/Navigation";
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
         <section className="flex flex-col p-10 ml-20 w-full gap-3">
           <Routes>
             <Route path="/" exact element={<Grid />} />
-            <Route path="/test" element={<GridHr />} />
+            <Route path="/team" element={<GridHr />} />
+            <Route path="/finance" element={<GridFinance />} />
           </Routes>
         </section>
       </main>
