@@ -74,7 +74,7 @@ const Grid = () => {
     );
   }, []);
 
-  const cellSelection = useMemo(() => { 
+  const cellSelection = useMemo(() => {
     return true;
   }, []);
 

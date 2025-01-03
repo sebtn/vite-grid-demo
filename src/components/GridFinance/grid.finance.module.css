@@ -15,9 +15,7 @@
 }
 
 .gridHeight {
-  height: calc(
-    100vh - var(--layout-grid-header-height) 
-  );
+  height: calc(100vh - var(--layout-grid-header-height));
 }
 
 :global(.ag-theme-quartz-dark .ag-row) {

@@ -11,10 +11,7 @@ function App() {
     <BrowserRouter>
       <main className="w-full h-screen flex flex-row relative">
         <Navigation />
-        <section
-          className="flex flex-col p-5 ml-20 w-full gap-3
-"
-        >
+        <section className="flex flex-col p-5 ml-20 w-full gap-3">
           <div className="lg:overflow-y-hidden overflow-y-auto">
             <Routes>
               <Route path="/" exact element={<Grid />} />
