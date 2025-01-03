@@ -165,7 +165,7 @@ const GridInventory = ({
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.exampleHeader}>
+        <div className="flex flex-col md:flex-row items-start sm:items-start md:items-end gap-4 sm:gap-5 md:gap-8 lg:gap-10 xl:gap-12 pb-4">
           <h1 className="text-4xl text-neutral-200">Inventory Dashboard</h1>
           <div className={styles.tabs}>
             {Object.entries(statuses).map(([key, displayValue]) => (

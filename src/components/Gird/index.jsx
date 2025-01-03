@@ -80,7 +80,7 @@ const Grid = () => {
 
   return (
     <div>
-      <div className={styles.wrapper}>
+      <div className="rapper flex flex-col md:flex-row items-start sm:items-start md:items-end gap-4 sm:gap-5 md:gap-8 lg:gap-10 xl:gap-12">
         <h1 className="text-4xl text-neutral-200">Dashboard</h1>
         <p>
           <span style={{ marginRight: 7 }}>Theme: </span>
