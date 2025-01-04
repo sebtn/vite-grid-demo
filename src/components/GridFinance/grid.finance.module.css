@@ -22,6 +22,10 @@
   --ag-row-hover-color: #323a46;
 }
 
+:global(.ag-status-bar) {
+  height: 110px;
+}
+
 @media screen and (max-width: 720px) {
   :global(div.ag-theme-quartz),
   :global(div.ag-theme-quartz-dark) {
